@@ -1,0 +1,89 @@
+# A fictional CV showing every section type. Copy this file, replace the content,
+# then run:  python build.py path/to/your-cv.yaml
+#
+# Inline formatting in any text: **bold** and [link text](example.com)
+# Contact and link entries are linked automatically (emails and domains).
+
+theme: pooh
+version: Jan_2027            # used in the output file name
+# output: ../output/my-cv.pdf  # optional; overrides the default file name
+# logo: my-logo.png            # optional square PNG, top right of page 1
+name: Alex Example
+headline: Senior Product Engineer · Full Stack and Applied AI
+contact:
+  - Bangkok, Thailand
+  - alex@example.com
+  - +66 2 000 0000
+links:
+  - example.com
+  - ตัวอย่าง.com
+  - github.com/example
+keywords: [Product Engineer, Full Stack Engineer, TypeScript, React, Node.js, PostgreSQL, LLM]
+
+sections:
+  - title: Profile
+    text: >-
+      Product engineer who builds products end to end and learns new domains fast. Built and runs
+      a booking platform as its sole engineer: web and mobile apps, backend, payments, and an LLM
+      assistant that answers from each customer's own history. Range so far: logistics, healthcare
+      scheduling, and multilingual e-commerce. Enjoys building from scratch and is equally drawn to
+      maintaining and scaling products as they grow.
+
+  - title: Experience
+    jobs:
+      - role: Founder and Engineer
+        company: Example Bookings
+        about: Booking SaaS, live
+        dates: 2024 – Present
+        bullets:
+          - Took the product from concept to launch as sole engineer, with a web app and a React Native mobile app.
+          - Designed the backend on Node.js and PostgreSQL, covering REST APIs, authentication, and role-based access.
+          - Shipped an LLM assistant that sends the model only the history it needs, which keeps token cost down.
+      - role: Software Engineer
+        company: Example Logistics Co.
+        about: Platform team (8 engineers)
+        dates: 2021 – 2024
+        bullets:
+          - Built event-driven services in TypeScript that track shipments across three countries.
+          - Migrated a reporting pipeline from nightly batch jobs to streaming, so dashboards update within minutes.
+      - role: Junior Developer
+        company: Example Agency
+        about: Client web projects
+        dates: 2019 – 2021
+        bullets:
+          - Delivered React sites for retail and hospitality clients, from design handoff to launch.
+
+  - title: Selected Projects
+    intro: >-
+      Freelance work through [example.com](example.com). **Available for contract projects.**
+    items:
+      - "**Clinic scheduler:** appointment system in Thai and English with LINE reminders and an admin back office."
+      - "**Price tracker:** small tool that watches supplier prices and flags changes above a set threshold."
+
+  - title: Education
+    text: "**Bachelor of Engineering, Computer Engineering** | Example University | 2019"
+
+  - title: Technical Skills
+    tiers:
+      - name: Core stack, used daily
+        rows:
+          Programming: TypeScript, JavaScript, Python, SQL
+          Frontend: React, Next.js, Tailwind CSS
+          Mobile: React Native, Expo
+          Backend: Node.js, Fastify, Zod
+          Data: PostgreSQL, Redis
+          Cloud and delivery: Vercel, Docker, GitHub Actions, Sentry
+          AI engineering: LLM APIs, RAG, prompt engineering, guardrails
+      - name: Also experienced with
+        rows:
+          Programming: Go, Swift, Kotlin
+          Infrastructure: AWS, Terraform, Linux
+          Testing: Vitest, Playwright
+
+  - title: Languages
+    inline: [Thai (native), English (C1)]
+
+# Rules check.py enforces for this CV. Add words you never want on the page.
+checks:
+  max_pages: 2
+  banned_terms: [lorem, TODO]

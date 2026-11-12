@@ -1,0 +1,6 @@
+.venv/
+__pycache__/
+.DS_Store
+output/
+# keep your own CV out of the repo unless you want it public
+my-cv*.yaml

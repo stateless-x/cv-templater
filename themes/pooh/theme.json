@@ -1,0 +1,39 @@
+{
+  "name": "pooh",
+  "description": "Warm cream paper, honey accents, Mitr headings and IBM Plex Sans Thai Looped body. Latin and Thai in the same faces.",
+  "page": { "margin_mm": [17, 19, 15, 19], "band_mm": 4 },
+  "colors": {
+    "paper": "#FFF9ED",
+    "ink": "#2A211A",
+    "muted": "#6B5D4F",
+    "accent": "#F3B21A",
+    "accent_ink": "#8F6207",
+    "separator": "#C9B9A4"
+  },
+  "fonts": {
+    "body": "IBMPlexSansThaiLooped-Regular.ttf",
+    "body_medium": "IBMPlexSansThaiLooped-Medium.ttf",
+    "body_bold": "IBMPlexSansThaiLooped-SemiBold.ttf",
+    "head": "Mitr-Regular.ttf",
+    "head_medium": "Mitr-Medium.ttf",
+    "head_bold": "Mitr-SemiBold.ttf"
+  },
+  "sizes": {
+    "name": 26,
+    "headline": 12,
+    "contact": 9,
+    "section": 12.4,
+    "body": 9.3,
+    "role": 10.8,
+    "meta": 9,
+    "skills_main": 9,
+    "skills_minor": 8.3
+  },
+  "spacing": {
+    "section_before": 16,
+    "section_after": 8,
+    "between_jobs": 10,
+    "between_bullets": 2.6,
+    "underline_mm": 16
+  }
+}
